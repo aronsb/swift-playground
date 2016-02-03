@@ -1,5 +1,13 @@
 // Playground - noun: a place where people can play
 
+// Git setup
+//  - navigated to swift folder and type git init (via terminal)
+//  - didn't have to install or configure git on the mach
+//  - created branch on GitHub
+//  - opened playground in xcode
+//  - source control / swift / configure swift / add remote (paste in url from GitHub
+//  - source control / commit
+
 // option + hover (command) - help
 // command + click (command) - kind of like 'go to definiton' ?
 
