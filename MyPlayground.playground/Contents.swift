@@ -1,11 +1,16 @@
 // Playground - noun: a place where people can play
 
+// xcode keyboard setup
+//  - xcode / preferences / key bindings
+//  - to change 'command' keys (command-c, etc.), system preferences / keyboard / modifier keys
+//    - changes it for all apps (not just xcode)
+
 // Git setup
-//  - navigated to swift folder and type git init (via terminal)
-//  - didn't have to install or configure git on the mach
+//  - navigated to swift folder and typed git init (via terminal)
+//  - didn't have to install or configure git on the mac
 //  - created branch on GitHub
 //  - opened playground in xcode
-//  - source control / swift / configure swift / add remote (paste in url from GitHub
+//  - source control / swift / configure swift / add remote (paste in branch url from GitHub)
 //  - source control / commit
 
 // option + hover (command) - help
@@ -50,7 +55,7 @@ class Person {
     }
     
     func DisplayName(title:String, year:Int) {
-        // notice string concat
+        // notice string placeholders
         print("\(title) \(self.FirstName) \(self.LastName) - \(String(year))")
     }
 
