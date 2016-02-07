@@ -1,5 +1,9 @@
 // Playground - noun: a place where people can play
 
+// feb 2016
+//  - xcode 7.2.1
+//  - swift 2.1.1
+
 // xcode keyboard setup
 //  - xcode / preferences / key bindings
 //  - to change 'command' keys (command-c, etc.), system preferences / keyboard / modifier keys
@@ -15,6 +19,11 @@
 
 // option + hover (command) - help
 // command + click (command) - kind of like 'go to definiton' ?
+
+// issues
+//  - wasn't able to create transition (segue) from one view controller to another (via dragging)
+//   - had to zoom out for it to work
+//   - can also try to drag to the to the other view controller via the document outline
 
 import UIKit
 
