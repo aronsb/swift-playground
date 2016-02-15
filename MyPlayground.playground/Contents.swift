@@ -51,7 +51,7 @@ label.sizeToFit()
 
 // ----- CLASS -----
 // swift supports single-inheritance
-
+/*
 class Person {
     var FirstName: String
     var LastName: String
@@ -78,12 +78,18 @@ class Person {
 var p1 = Person(firstName: "Joe", lastName: "Blow", age: 30)
 p1.DisplayName("Captain", year: 1980)
 var newAge = p1.IncreaseAge(3)
-
+*/
 
 // ----- ARRAY ------
 /*
 var fruit = ["apple", "orange", "grape"]
 fruit.append("banana")
+*/
+
+// ----- ARRAY OF COMPLEX OBJECTS ------
+/*
+var employees = [Person]()
+employees.append(Person(firstName: "Joe", lastName: "Blow", age: 30))
 */
 
 // ----- OPTIONALS -----
@@ -121,6 +127,7 @@ if job != nil {
 
 
 // ----- FUNCTION -----
+/*
 func say(phrase: String) {
     print(phrase)
 }
@@ -134,10 +141,22 @@ func say(phrase: String, times: Int) {
 }
 
 say("bye", times: 1)
-
+*/
 
 // ----- TUPLE -----
+/*
 var s1 = (code: 403, message: "error")
 s1.code
 s1.1
+*/
+
+// ----- DATES -----
+let dateString = "2015-02-11"
+let dateFormatter = NSDateFormatter()
+dateFormatter.dateFormat = "yyyy-MM-dd"
+let dateObj = dateFormatter.dateFromString(dateString)
+
+dateFormatter.dateFormat = "MM-dd-yyyy"
+print("Dateobj: \(dateFormatter.stringFromDate(dateObj!))")
+
 
