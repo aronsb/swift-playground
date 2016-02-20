@@ -159,4 +159,7 @@ let dateObj = dateFormatter.dateFromString(dateString)
 dateFormatter.dateFormat = "MM-dd-yyyy"
 print("Dateobj: \(dateFormatter.stringFromDate(dateObj!))")
 
+// ----- NSLog -----
+NSLog("hello")  // displays in debugger window
+
 

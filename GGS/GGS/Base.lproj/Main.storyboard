@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GGS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GGS" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,6 +21,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="pJ5-wU-hbx" kind="show" identifier="scoreView" id="KLu-Lw-Jfr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -28,7 +31,9 @@
                             <outlet property="delegate" destination="BYZ-38-t0r" id="R6O-3D-zfz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="bIp-II-ksk"/>
+                    <navigationItem key="navigationItem" title="GGS" id="bIp-II-ksk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Zh-nM-x76"/>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -39,16 +44,26 @@
         <!--ScoreView-->
         <scene sceneID="6cO-27-F55">
             <objects>
-                <viewController title="ScoreView" id="pJ5-wU-hbx" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mUI-Le-Bio"/>
-                        <viewControllerLayoutGuide type="bottom" id="fcL-1H-wNZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jyG-I7-JqU">
+                <viewController title="ScoreView" id="pJ5-wU-hbx" customClass="ScoreViewController" customModule="GGS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MPK-S7-HD9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scoreCell" id="Ra6-4B-0ya">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ra6-4B-0ya" id="7cn-3d-fQv">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pJ5-wU-hbx" id="P66-zc-Ji7"/>
+                            <outlet property="delegate" destination="pJ5-wU-hbx" id="9zk-rA-PzE"/>
+                        </connections>
+                    </tableView>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>

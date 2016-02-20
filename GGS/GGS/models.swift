@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Scores {
+class Score {
     var course: String?
     var score: String?
     var date: String?
@@ -20,21 +20,9 @@ class Scores {
     }
 }
 
+// complex object the will be loaded manually
 /*
-class Golfers {
-    var FirstName: String?
-    var LastName: String?
-    var GolferID: String?
-    
-    init(json: NSDictionary) {
-        self.FirstName = json["firstname"] as? String
-        self.LastName = json["lastname"] as? String
-        self.GolferID = json["golfer_id"] as? String
-    }
-}
-*/
-
-class Golfers {
+class Golfer {
     var GolferID: Int
     var FirstName: String
     var LastName: String
@@ -43,5 +31,19 @@ class Golfers {
         self.GolferID = GolferID
         self.FirstName = FirstName
         self.LastName = LastName
+    }
+}
+*/
+
+// complex object that will be loaded via json
+class Golfer {
+    var FirstName: String?
+    var LastName: String?
+    var GolferID: String?
+
+    init(json: NSDictionary) {
+        self.FirstName = json["firstname"] as? String
+        self.LastName = json["lastname"] as? String
+        self.GolferID = json["golfer_id"] as? String
     }
 }

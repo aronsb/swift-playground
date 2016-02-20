@@ -14,6 +14,7 @@
 		A99ECA5D1C715ABB00B1CDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99ECA5B1C715ABB00B1CDC4 /* LaunchScreen.storyboard */; };
 		A99ECA651C715B6300B1CDC4 /* notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECA641C715B6300B1CDC4 /* notes.swift */; };
 		A99ECA671C7186B800B1CDC4 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECA661C7186B800B1CDC4 /* models.swift */; };
+		A9E79AED1C759B0D0073F842 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E79AEC1C759B0D0073F842 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A99ECA5E1C715ABB00B1CDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A99ECA641C715B6300B1CDC4 /* notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notes.swift; sourceTree = "<group>"; };
 		A99ECA661C7186B800B1CDC4 /* models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
+		A9E79AEC1C759B0D0073F842 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		A9EAC6751C74366500992CA4 /* GGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = GGS; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				A99ECA521C715ABB00B1CDC4 /* AppDelegate.swift */,
 				A99ECA541C715ABB00B1CDC4 /* ViewController.swift */,
+				A9E79AEC1C759B0D0073F842 /* ScoreViewController.swift */,
+				A9EAC6751C74366500992CA4 /* GGS */,
 				A99ECA661C7186B800B1CDC4 /* models.swift */,
 				A99ECA561C715ABB00B1CDC4 /* Main.storyboard */,
 				A99ECA641C715B6300B1CDC4 /* notes.swift */,
@@ -145,6 +150,7 @@
 				A99ECA551C715ABB00B1CDC4 /* ViewController.swift in Sources */,
 				A99ECA531C715ABB00B1CDC4 /* AppDelegate.swift in Sources */,
 				A99ECA671C7186B800B1CDC4 /* models.swift in Sources */,
+				A9E79AED1C759B0D0073F842 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +300,7 @@
 				A99ECA631C715ABB00B1CDC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
