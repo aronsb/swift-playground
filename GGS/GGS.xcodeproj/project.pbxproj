@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9029F1E1C9660EC00A57E74 /* GolferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9029F1D1C9660EC00A57E74 /* GolferViewController.swift */; };
+		A96A780C1CA775E900E5F055 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A780B1CA775E900E5F055 /* MainViewController.swift */; };
 		A99ECA531C715ABB00B1CDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECA521C715ABB00B1CDC4 /* AppDelegate.swift */; };
 		A99ECA551C715ABB00B1CDC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECA541C715ABB00B1CDC4 /* ViewController.swift */; };
 		A99ECA581C715ABB00B1CDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99ECA561C715ABB00B1CDC4 /* Main.storyboard */; };
@@ -14,10 +16,13 @@
 		A99ECA5D1C715ABB00B1CDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99ECA5B1C715ABB00B1CDC4 /* LaunchScreen.storyboard */; };
 		A99ECA651C715B6300B1CDC4 /* notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECA641C715B6300B1CDC4 /* notes.swift */; };
 		A99ECA671C7186B800B1CDC4 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99ECA661C7186B800B1CDC4 /* models.swift */; };
+		A9AFD92F1C97B600007B1DE9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AFD92E1C97B600007B1DE9 /* ProfileViewController.swift */; };
 		A9E79AED1C759B0D0073F842 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E79AEC1C759B0D0073F842 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9029F1D1C9660EC00A57E74 /* GolferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolferViewController.swift; sourceTree = "<group>"; };
+		A96A780B1CA775E900E5F055 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A99ECA4F1C715ABB00B1CDC4 /* GGS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99ECA521C715ABB00B1CDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A99ECA541C715ABB00B1CDC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +32,7 @@
 		A99ECA5E1C715ABB00B1CDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A99ECA641C715B6300B1CDC4 /* notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notes.swift; sourceTree = "<group>"; };
 		A99ECA661C7186B800B1CDC4 /* models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
+		A9AFD92E1C97B600007B1DE9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A9E79AEC1C759B0D0073F842 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		A9EAC6751C74366500992CA4 /* GGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = GGS; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -62,8 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				A99ECA521C715ABB00B1CDC4 /* AppDelegate.swift */,
+				A96A780B1CA775E900E5F055 /* MainViewController.swift */,
 				A99ECA541C715ABB00B1CDC4 /* ViewController.swift */,
+				A9029F1D1C9660EC00A57E74 /* GolferViewController.swift */,
 				A9E79AEC1C759B0D0073F842 /* ScoreViewController.swift */,
+				A9AFD92E1C97B600007B1DE9 /* ProfileViewController.swift */,
 				A9EAC6751C74366500992CA4 /* GGS */,
 				A99ECA661C7186B800B1CDC4 /* models.swift */,
 				A99ECA561C715ABB00B1CDC4 /* Main.storyboard */,
@@ -147,10 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A99ECA651C715B6300B1CDC4 /* notes.swift in Sources */,
+				A9029F1E1C9660EC00A57E74 /* GolferViewController.swift in Sources */,
 				A99ECA551C715ABB00B1CDC4 /* ViewController.swift in Sources */,
 				A99ECA531C715ABB00B1CDC4 /* AppDelegate.swift in Sources */,
+				A9AFD92F1C97B600007B1DE9 /* ProfileViewController.swift in Sources */,
 				A99ECA671C7186B800B1CDC4 /* models.swift in Sources */,
 				A9E79AED1C759B0D0073F842 /* ScoreViewController.swift in Sources */,
+				A96A780C1CA775E900E5F055 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +274,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GGS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.getgolfscores.GGS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,10 +289,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GGS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.getgolfscores.GGS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

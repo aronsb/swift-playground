@@ -80,6 +80,26 @@ p1.DisplayName("Captain", year: 1980)
 var newAge = p1.IncreaseAge(3)
 */
 
+// ----- CLASS (OVERRIDE) -----
+class Animal {
+    var name:String = ""
+    
+    func getDetails() {
+        print("name: \(name)")
+    }
+}
+
+class Dog : Animal {
+    override func getDetails() {
+        super.getDetails()
+        print("my name is: \(name)")
+    }
+}
+
+var dog = Dog()
+dog.name = "max"
+dog.getDetails()
+
 // ----- ARRAY ------
 /*
 var fruit = ["apple", "orange", "grape"]

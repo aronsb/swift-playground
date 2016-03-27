@@ -20,7 +20,7 @@ class Score {
     }
 }
 
-// complex object the will be loaded manually
+// complex object that will be loaded manually
 /*
 class Golfer {
     var GolferID: Int
@@ -45,5 +45,29 @@ class Golfer {
         self.FirstName = json["firstname"] as? String
         self.LastName = json["lastname"] as? String
         self.GolferID = json["golfer_id"] as? String
+    }
+}
+
+// complex object that will be loaded manually
+class MainMenu {
+    var OptionID: Int
+    var OptionName: String
+    var LeagueID: Int
+    
+    init (OptionID: Int, OptionName: String, LeagueID: Int) {
+        self.OptionID = OptionID
+        self.OptionName = OptionName
+        self.LeagueID = LeagueID
+    }
+}
+
+// complex object that will be loaded manually
+class GolferMenu {
+    var OptionID: Int
+    var OptionName: String
+
+    init (OptionID: Int, OptionName: String) {
+        self.OptionID = OptionID
+        self.OptionName = OptionName
     }
 }

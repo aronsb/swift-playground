@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -10,30 +11,52 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="Wr5-gF-LCF"/>
+                        <viewControllerLayoutGuide type="bottom" id="uPe-vJ-XxI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="Vkk-fS-Vgu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH5-Q8-fj6">
-                                <rect key="frame" x="273" y="285" width="55" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="Ky6-cK-3QM">
+                                <rect key="frame" x="-8" y="0.0" width="391" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fang" translatesAutoresizingMaskIntoConstraints="NO" id="4QS-Dt-e4q">
+                                <rect key="frame" x="328" y="586" width="35" height="61"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="getgolfscores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsP-lQ-DIJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <color key="backgroundColor" red="0.2664690981869805" green="0.29803922770000002" blue="0.26297957128213506" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="7in-Wu-z7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="0.39000000000000001" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SH5-Q8-fj6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0I3-fm-lH7"/>
-                            <constraint firstItem="SH5-Q8-fj6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PWP-fO-LZU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4QS-Dt-e4q" secondAttribute="trailing" constant="-4" id="41d-Fa-J3M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ky6-cK-3QM" secondAttribute="trailing" constant="-24" id="5AM-L4-GOh"/>
+                            <constraint firstAttribute="trailing" secondItem="EsP-lQ-DIJ" secondAttribute="trailing" id="9H4-C8-HCV"/>
+                            <constraint firstItem="Ky6-cK-3QM" firstAttribute="leading" secondItem="Vkk-fS-Vgu" secondAttribute="leadingMargin" constant="-24" id="Dtz-Md-UXq"/>
+                            <constraint firstItem="EsP-lQ-DIJ" firstAttribute="leading" secondItem="Vkk-fS-Vgu" secondAttribute="leading" id="J6i-t9-e0N"/>
+                            <constraint firstItem="uPe-vJ-XxI" firstAttribute="top" secondItem="Ky6-cK-3QM" secondAttribute="bottom" id="ThT-jK-aC1"/>
+                            <constraint firstItem="EsP-lQ-DIJ" firstAttribute="top" secondItem="Wr5-gF-LCF" secondAttribute="bottom" constant="-20" id="bLM-ll-Ib8"/>
+                            <constraint firstItem="uPe-vJ-XxI" firstAttribute="top" secondItem="4QS-Dt-e4q" secondAttribute="bottom" constant="20" id="oco-We-pVO"/>
+                            <constraint firstItem="Ky6-cK-3QM" firstAttribute="top" secondItem="Vkk-fS-Vgu" secondAttribute="topMargin" id="z48-fl-xAT"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="42.5" y="367.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background2" width="640" height="1136"/>
+        <image name="fang" width="35" height="61"/>
+    </resources>
 </document>
